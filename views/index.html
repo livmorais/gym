@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav>
+            <div class="container d-flex justify-between">
+                <div class="text-center">
+                    <a href="/" class="nav-brand">Sistema de Gerenciamento</a>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="/">Clientes</a></li>
+                        <li><a href="/agendamentos">Agendamentos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between menu">
+                <a href="/add-client" class="border-shadow">
+                    <span class="text-dark">Novo cliente <i class="fa-solid fa-user-plus text-gradient"></i></span>
+                </a>
+                <div class="status-box">
+                <select class="text-dark border-shadow" id="statusFilter">
+                    <option value="todos">Status</option>
+                    <option value="Ativo">Ativo</option>
+                    <option value="Inativo">Inativo</option>
+                </select>
+                </div>     
+                <div class="search-icon">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+                <div class="search-box border-shadow">
+                    <input class="text-dark" type="text" id="searchInput" placeholder="Buscar clientes...">
+                </div> 
+                
+            </div>
+
+            <!--FORMULÁRIO-->
+            <form action="/" method="post">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Gênero</th>
+                            <th>Status</th>
+                            <th>Alterar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="/js/clientes/mainClientes.js"></script>
+</body>
+</html>

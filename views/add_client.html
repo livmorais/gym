@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav>
+            <div class="container d-flex justify-between">
+                <div class="text-center">
+                    <a href="/" class="nav-brand">Sistema de Gerenciamento</a>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="/">Clientes</a></li>
+                        <li><a href="/agendamentos">Agendamentos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i> Lista de clientes</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Novo cliente</h2>
+                <span class="text-light">Use o formulário abaixo para cadastrar um novo cliente</span>
+            </div>
+
+            <!--FORMULÁRIO-->
+            <form action="/api/clients" method="post" id="add_client">
+                <div class="new_client">
+                    <div class="form-group">
+                        <label for="name" class="text-light">Nome</label>
+                        <input type="hidden" name="id" value="">
+                        <input type="text" id="name" name="name" value="" placeholder="Nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone" class="text-light">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" value="" placeholder="(XX) 9XXXX-YYYY">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-light">Email</label>
+                        <input type="text" id="email" name="email" value="" placeholder="email@address.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="genero" class="text-light">Gênero</label>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-1" name="genero" value="Feminino">
+                            <label for="radio-1" class="radio-label">Feminino</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-2" name="genero" value="Masculino">
+                            <label for="radio-2" class="radio-label">Masculino</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="status" class="text-light">Status</label>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-3" name="status" value="Ativo">
+                            <label for="radio-3" class="radio-label">Ativo</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-4" name="status" value="Inativo">
+                            <label for="radio-4" class="radio-label">Inativo</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Salvar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/js/clientes/create/create.js"></script>
+</body>
+</html>

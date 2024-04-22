@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav>
+            <div class="container d-flex justify-between">
+                <div class="text-center">
+                    <a href="/" class="nav-brand">Sistema de Gerenciamento</a>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="/">Clientes</a></li>
+                        <li><a href="/agendamentos">Agendamentos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!--MAIN-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between menu">
+                <a href="/add-agendamento" class="border-shadow">
+                    <span class="text-dark">Novo agendamento <i class="fa-solid fa-calendar-plus text-gradient"></i> </span>
+                </a>
+                <div class="aula-box">
+                    <select class="text-dark border-shadow filter" id="aulaFilter">
+                        <option value="todos">Aulas</option>
+                        <option value="Dança">Dança</option>
+                        <option value="Yoga">Yoga</option>
+                        <option value="Ginástica">Ginástica</option>
+                        <option value="Pilates">Pilates</option>
+                        <option value="Funcional">Funcional</option>
+                        <option value="Boxe">Boxe</option>
+                        <option value="Judô">Judô</option>
+                        <option value="Muay Thai">Muay Thai</option>
+                        <option value="Jiu-jitsu">Jiu-jitsu</option>
+                    </select>
+                </div>  
+                <div class="aula-box">
+                    <select class="text-dark border-shadow filter" id="confirmFilter">
+                        <option value="todos">Status</option>
+                        <option value="Confirmado">Confirmado</option>
+                        <option value="Pendente">Pendente</option>
+                    </select>
+                </div>  
+            </div>
+
+            <!--FORMULÁRIO-->
+            <form action="/" method="post">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Aula</th>
+                            <th>Forma de Pagamento</th>
+                            <th>Status</th>
+                            <th>Alterar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="/js/agendamentos/mainAgendamentos.js"></script>
+</body>
+</html>

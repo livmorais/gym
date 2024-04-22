@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav>
+            <div class="container d-flex justify-between">
+                <div class="text-center">
+                    <a href="/" class="nav-brand">Sistema de Gerenciamento</a>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="/">Clientes</a></li>
+                        <li><a href="/agendamentos">Agendamentos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <!--MAIN-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <div class="filter">
+                    <a href="/agendamentos"><i class="fas fa-angle-double-left"></i> Lista de agendamentos</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Editar Agendamento</h2>
+                <span class="text-light">Use o formulário abaixo para alterar as informações do agendamento</span>
+            </div>
+
+            <!--FORMULÁRIO-->
+            
+            <form method="post" id="update_agendamento">
+                <div class="new_agendamento">
+                    <div class="form-group">
+                        <label for="clienteId" class="text-light">Cliente</label>
+                        <select id="clienteId" name="clienteId">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="aula" class="text-light">Aula</label>
+                        <select id="aula" name="aula" class="text-dark">
+                            <option value="Dança">Dança</option>
+                            <option value="Yoga">Yoga</option>
+                            <option value="Ginástica">Ginástica</option>
+                            <option value="Pilates">Pilates</option>
+                            <option value="Funcional">Funcional</option>
+                            <option value="Boxe">Boxe</option>
+                            <option value="Judô">Judô</option>
+                            <option value="Muay Thai">Muay Thai</option>
+                            <option value="Jiu-jitsu">Jiu-jitsu</option>
+                        </select>
+                    </div>                    
+                    <div class="form-group">
+                        <label for="pagamento" class="text-light">Forma de Pagamento</label>
+                        <select id="pagamento" name="pagamento" class="text-dark">
+                            <option value="Pendente">Pendente</option>
+                            <option value="Pix">Pix</option>
+                            <option value="Cartão">Cartão</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                        </select>
+                    </div>                   
+                    <div class="form-group">
+                        <label for="confirmado" class="text-light">Status</label>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-2" name="confirmado" value="Confirmado">
+                            <label for="radio-2" class="radio-label">Confirmado</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-3" name="confirmado" value="Pendente">
+                            <label for="radio-3" class="radio-label">Pendente</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Salvar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/js/agendamentos/update/updateAgendamento.js"></script>
+</body>
+</html>
