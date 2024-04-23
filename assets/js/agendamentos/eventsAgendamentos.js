@@ -1,7 +1,8 @@
 import { fetchAgendamentos, buscarAulas, buscarPorConfirmacao } from './logicAgendamentos.js'
 
-document.getElementById('aulaFilter').addEventListener('change', function() {
-    const selectedAula = this.value;
+//busca um elemento no DOM com ID aulaFilter
+document.getElementById('aulaFilter').addEventListener('change', (event)  => {
+    const selectedAula = event.target.value;
     if (selectedAula === 'todos') {
         fetchAgendamentos(); 
     } else {
@@ -9,6 +10,7 @@ document.getElementById('aulaFilter').addEventListener('change', function() {
     }
 });
 
+//busca um elemento no DOM com o ID confirmFilter
 document.getElementById('confirmFilter').addEventListener('change', (event) => {
     const selectedConfirm = event.target.value;
     if (selectedConfirm === 'todos') {

@@ -1,5 +1,5 @@
 
-# Sistema de Gerenciamento para academias
+# Sistema de Gerenciamento para Academias
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -9,19 +9,19 @@
 
 ## Conteúdos
 
-- [Visão Geral](#visao-geral)
-- [API Endpoints](#api)
-- [O que é o Node.js?](#node)
-- [Modelo de Processo do Node.js](#modelo)
-- [Como o Node.js funciona?](#funciona)
-- [Arquitetura - Node.js](#arquitetura)
-- [Vantagens](#vantagens)
-- [O que é o V8 do Chrome?](#v8)
-- [Por que o LIBUV é necessário no Node.js?](#libuv)
+- [Visão Geral](#Visão Geral)
+- [API Endpoints](#API Endpoints )
+- [O que é o Node.js?](#O que é o Node.js?)
+- [Modelo de Processo do Node.js](#Modelo de Processo do Node.js )
+- [Como o Node.js funciona?](#Como o Node.js funciona?)
+- [Arquitetura - Node.js](#Arquitetura - Node.js)
+- [Vantagens do Node.js](#Vantagens do Node.js)
+- [O que é o V8 do Chrome?](#O que é o V8 do Chrome?)
+- [Por que o LIBUV é necessário no Node.js?](#Por que o LIBUV é necessário no Node.js?)
 
 ## Visão Geral 
 
-Este sistema de gerenciamento para academias permite aos usuários realizar operações, como gerenciar informações de clientes e gerenciar agendamentos de clientes em aulas coletivas. Ele oferece uma interface intuitiva e fácil de usar para administrar as atividades relacionadas à academia.
+Esse sistema de gerenciamento para academias permite aos usuários realizar operações, como gerenciar informações de clientes e gerenciar agendamentos de clientes em aulas coletivas. Ele oferece uma interface intuitiva e fácil de usar para administrar as atividades relacionadas à academia.
 
 <h1 align="center">
     <img src="./assets/img/index-cliente.png" width="300"/>
@@ -99,6 +99,15 @@ Passos de processamento do modelo de Event Loop com single-thread:
      - Essa thread é responsável por receber a solicitação, processá-la, executar as operações de I/O bloqueante, preparar a resposta e enviá-la de volta para o Event Loop.
      - O Event Loop, por sua vez, envia essa resposta para o respectivo cliente.
 
+## Vantagens do Node.js
+
+- Flexível
+- Leve
+- Alta escalabilidade
+- Redução de custos
+- Maior repositório do mundo - NPM
+- Mesma linguagem no frontend e backend
+
 ## O que é o V8 do Chrome? 
 
 O V8 é um mecanismo JavaScript de código aberto criado em C++ desenvolvido pelo Google. Foi originalmente projetado para o Google Chrome e navegadores baseados no Chromium (como o Brave) em 2008, mas posteriormente foi utilizado para criar o Node.js para codificação no lado do servidor.
@@ -115,12 +124,3 @@ O libuv é uma biblioteca em C originalmente escrita para o Node.js, para abstra
 - Facilita uma abordagem orientada a eventos em que I/O e outras atividades são realizadas usando notificações baseadas em callbacks.
 - Fornece mecanismos para lidar com sistema de arquivos, DNS, rede, processos filhos, pipes, manipulação de sinais, sondagem e streaming.
 - Também inclui um pool de threads para transferir o trabalho para algumas coisas que não podem ser feitas de forma assíncrona no nível do sistema operacional.
-
-## Vantagens do Node.js
-
-- Flexível
-- Leve
-- Alta escalabilidade
-- Redução de custos
-- Maior repositório do mundo - NPM
-- Mesma linguagem no frontend e backend

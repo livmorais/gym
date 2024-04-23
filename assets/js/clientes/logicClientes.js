@@ -1,6 +1,6 @@
 import { createTableRow } from './domClientes.js';
 
-export async function populateClientsTable() { 
+export const populateClientsTable = async () => {
     try {
         const response = await fetch('http://localhost:3000/api/clients');  
         const data = await response.json();  
@@ -17,7 +17,7 @@ export async function populateClientsTable() {
     }    
 };
 
-export async function buscarClientes() { 
+export const buscarClientes = async () => {
     const name = document.getElementById('searchInput').value.trim();
 
     if (name === '') {
@@ -41,7 +41,7 @@ export async function buscarClientes() {
     }
 };
 
-export async function buscarClientesPorStatus(status) { 
+export const buscarClientesPorStatus = async(status) => {
     try {
         const response = await fetch(`http://localhost:3000/api/clients/status/${status}`);
         const data = await response.json();
