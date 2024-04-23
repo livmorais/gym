@@ -9,27 +9,27 @@
 
 ## Conteúdos
 
-- [Visão Geral](#Visão Geral)
-- [API Endpoints](#API Endpoints )
-- [O que é o Node.js?](#O que é o Node.js?)
-- [Modelo de Processo do Node.js](#Modelo de Processo do Node.js )
-- [Como o Node.js funciona?](#Como o Node.js funciona?)
-- [Arquitetura - Node.js](#Arquitetura - Node.js)
-- [Vantagens do Node.js](#Vantagens do Node.js)
-- [O que é o V8 do Chrome?](#O que é o V8 do Chrome?)
-- [Por que o LIBUV é necessário no Node.js?](#Por que o LIBUV é necessário no Node.js?)
+- [Visão Geral](#visão-geral)
+- [API Endpoints](#api-endpoints)
+- [O que é o Node.js?](#o-que-é-o-nodejs)
+- [Modelo de Processo do Node.js](#modelo-de-processo-do-nodejs)
+- [Como o Node.js funciona?](#como-o-nodejs-funciona)
+- [Arquitetura - Node.js](#arquitetura---nodejs)
+- [Vantagens do Node.js](#vantagens-do-nodejs)
+- [O que é o V8 do Chrome?](#o-que-é-o-v8-do-chrome)
+- [Por que o LIBUV é necessário no Node.js?](#por-que-o-libuv-é-necessário-no-nodejs)
 
 ## Visão Geral 
 
 Esse sistema de gerenciamento para academias permite aos usuários realizar operações, como gerenciar informações de clientes e gerenciar agendamentos de clientes em aulas coletivas. Ele oferece uma interface intuitiva e fácil de usar para administrar as atividades relacionadas à academia.
 
 <h1 align="center">
-    <img src="./assets/img/index-cliente.png" width="300"/>
-    <img src="./assets/img/add-cliente.png" width="300"/>
-    <img src="./assets/img/update-cliente.png" width="300"/>
-    <img src="./assets/img/index-agendamentos.png" width="300"/>
-    <img src="./assets/img/add-agendamento.png" width="300"/>
-    <img src="./assets/img/update-agendamento.png" width="300"/>
+    <img src="./assets/img/index-cliente.png" width="500"/>
+    <img src="./assets/img/add-cliente.png" width="500"/>
+    <img src="./assets/img/update-cliente.png" width="500"/>
+    <img src="./assets/img/index-agendamentos.png" width="500"/>
+    <img src="./assets/img/add-agendamento.png" width="500"/>
+    <img src="./assets/img/update-agendamento.png" width="500"/>
 </h1>
 
 ## API Endpoints 
