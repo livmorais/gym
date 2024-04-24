@@ -54,10 +54,10 @@ Esse sistema de gerenciamento para academias permite aos usuários realizar oper
 ### Construído com
 
 - Core
-  - [node.js](https://nodejs.org/en/docs/) - uma plataforma de tempo de execução JavaScript construída no motor V8 JavaScript do Chrome.
+  - [node.js](https://nodejs.org/en/docs/) - uma plataforma de ambiente de execução JavaScript construída no motor V8 JavaScript do Chrome.
 
 - Framework web
-  - [express](https://expressjs.com) - Framework web rápido, sem opiniões e minimalista para Node.js.
+  - [express](https://expressjs.com) - Framework web rápido e minimalista para Node.js.
 
 - Banco de dados
    - [mongoDB](https://www.mongodb.com/docs/manual/) - um poderoso sistema de banco de dados orientado a documentos, valorizado por sua flexibilidade e escalabilidade.
