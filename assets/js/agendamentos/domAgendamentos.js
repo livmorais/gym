@@ -16,6 +16,7 @@ export const createTableRow = (agendamento, cliente) => `
     </tr>
 `;
 
+// Atualiza a tabela de agendamentos com base na lista de agendamentos fornecida
 export const atualizarTabelaAgendamentos = (agendamentos) => {
     const tbody = document.querySelector('tbody');
     tbody.innerHTML = ''; 
@@ -25,8 +26,10 @@ export const atualizarTabelaAgendamentos = (agendamentos) => {
         return;
     }
 
+    // Itera sobre cada agendamento na lista
     agendamentos.forEach(agendamento => {
         const cliente = agendamento.cliente ? agendamento.cliente : null;
+        // Cria uma nova linha da tabela usando a função createTableRow e adiciona à tabela
         const row = document.createElement('tr');
         row.innerHTML = createTableRow(agendamento, cliente);  
         tbody.appendChild(row);

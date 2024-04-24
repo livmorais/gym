@@ -58,8 +58,11 @@ export const buscarClientesPorStatus = async(status) => {
     }
 };
 
+// Função debounce que recebe uma função (func) e um tempo de espera (wait)
 export const debounce = (func, wait) => { 
     let timeout;
+
+     // Retorna uma função que será executada quando o evento ocorrer
     return (...args) => {
         clearTimeout(timeout); // Limpa o timeout anterior para garantir que func só seja chamada após o usuário parar de digitar
         timeout = setTimeout(() => func(...args), wait);  // Define um novo timeout para chamar func após o intervalo de espera
@@ -90,9 +93,11 @@ export const deleteClient = async (clientId) => {
     populateClientsTable(); 
 };
 
-
+// alterna a visibilidade do campo de pesquisa
 export const toggleSearchInput = () => {
     const searchInputContainer = document.querySelector('.search-box');
+
+    // adiciona ou remove a classe 'active' para alterar a visibilidade do campo de pesquisa
     searchInputContainer.classList.toggle('active');
 };
 window.toggleSearchInput = toggleSearchInput;

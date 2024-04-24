@@ -5,10 +5,12 @@ const fetchClients = async () => {
         const response = await fetch('http://localhost:3000/api/clients');
         const clients = await response.json();
 
-        
+        // Seleciona o elemento de seleção de cliente
         const select = document.getElementById('clienteId');
+        // Limpa o conteúdo anterior do elemento de seleção e adiciona uma opção padrão
         select.innerHTML = '<option value="">Selecionar</option>'
 
+        // Preenche o elemento de seleção com as opções de clientes
         clients.forEach(client => {
             const option = document.createElement('option');
             option.value = client._id;

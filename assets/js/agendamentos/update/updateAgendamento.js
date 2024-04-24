@@ -27,13 +27,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         document.getElementById('update_agendamento').addEventListener('submit', async (event) => {
             event.preventDefault();
-
+            
+            // Cria um objeto FormData a partir do formulário e converte para um objeto JavaScript
             const formData = new FormData(event.target);
             const data = Object.fromEntries(formData);
 
             const request = {
                 method: "PUT",
-                body: new URLSearchParams(data),
+                body: new URLSearchParams(data),  // Converte os dados do formulário para URLSearchParams
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }

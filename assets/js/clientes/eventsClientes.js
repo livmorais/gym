@@ -35,11 +35,12 @@ document.addEventListener('click', async (event) => {
     }
 });
 
-document.getElementById('statusFilter').addEventListener('change', async function() {
-    if (this.value === 'todos') {
+document.getElementById('statusFilter').addEventListener('change', (event) => {
+    const selectedStatus = event.target.value;
+    if (selectedStatus === 'todos') {
         populateClientsTable(); 
     } else {
-        await buscarClientesPorStatus(this.value);
+        buscarClientesPorStatus(selectedStatus);
     }
 });
     
