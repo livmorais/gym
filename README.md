@@ -19,7 +19,7 @@
 Esse sistema de gerenciamento para academias permite aos usuários realizar operações, como gerenciar informações de clientes e gerenciar agendamentos de clientes em aulas coletivas. Ele oferece uma interface intuitiva e fácil de usar para administrar as atividades relacionadas à academia.
 
 <h1 align="center">
-    <img src="./assets/img/index-cliente.png" width="300"/>
+    <img src="./assets/img/index-clientes.png" width="300"/>
     <img src="./assets/img/add-cliente.png" width="300"/>
     <img src="./assets/img/update-cliente.png" width="300"/>
     <img src="./assets/img/index-agendamentos.png" width="300"/>
